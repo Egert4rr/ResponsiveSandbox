@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shape{
+    height: 400px;
+    width: 400px;
+    margin: 5rem auto;
+    background-color: darkorange;
+    clip-path: polygon(0 17%, 41% 43%, 22% 0, 81% 0, 60% 43%, 100% 20%, 100% 80%, 60% 60%, 76% 100%, 23% 100%, 42% 60%, 0 79%);
+}
+.shape-container {
+    border: 5px solid cyan;
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media (min-width: 480px) {
+    body {
+        background-color: rgb(251, 0, 134);
+    }
+    .shape-container{
+        width: 100%;
+    }
+    .shape {
+        background-color: rgb(255, 238, 0);
+        clip-path: polygon(10% 25%, 23% 12%, 35% 0%, 65% 0%, 77% 12%, 90% 25%, 90% 50%, 54% 100%, 53% 100%, 45% 100%, 45% 100%, 10% 50%);
+    }
+}
+
+@media (min-width: 760px) {
+    body {
+        background-color: rgb(169, 1, 199);
+    }
+    .shape {
+        background-color: rgb(197, 0, 0);
+        clip-path: polygon(0 17%, 41% 43%, 22% 0, 81% 0, 60% 43%, 100% 20%, 100% 80%, 60% 60%, 76% 100%, 23% 100%, 42% 60%, 0 79%);
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: rgb(236, 0, 0);
+    }
+    .shape {
+        background-color: gray;
+        clip-path: polygon(0 17%, 41% 43%, 22% 0, 81% 0, 60% 43%, 100% 20%, 100% 80%, 60% 60%, 76% 100%, 23% 100%, 42% 60%, 0 79%);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: darkslateblue;
+    }
+    .shape-container{
+        width: 75%;
+    }
+    .shape {
+        background-color: gray;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+}
